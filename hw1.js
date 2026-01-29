@@ -14,7 +14,22 @@ function average(arr){
     return sum(arr)/arr.length;
 }
 
+function min(arr){
+let m =arr[0];
+for(const n of arr){
+    if(n < m) m = n;
+}
+return m;
+}
 
+
+function max(arr){
+let m =arr[0];
+for(const n of arr){
+    if(n > m) m = n;
+}
+return m;
+}
 
 //String Functions
 
