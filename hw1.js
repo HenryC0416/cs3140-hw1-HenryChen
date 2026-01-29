@@ -32,7 +32,29 @@ return m;
 }
 
 //String Functions
+function capitalize(str){
+    let arr = str.split("");
+    arr[0] = arr[0].toUpperCase();
+    return arr.join("");
+}
 
+function reverse(str){
+    let reversedString = "";
+    for (const char of str) {
+    reversedString = char + reversedString;
+  }
+  return reversedString;
+}
+
+function countVowels(str){
+    let vowelCount = 0;
+    for(const char of str){
+        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+            vowelCount++;
+        }
+    }
+    return vowelCount;
+}
 
 
 //Object Practice
