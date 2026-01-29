@@ -66,11 +66,15 @@ age: 20,
 grades: [85, 90, 78],
 
 getAverage: function() {
-   
+    let total =0;
+    for(const grade of this.grades){
+        total +=grade;
+    }
+    return total/this.grades.length;
 },
 
 isHonorRoll: function() {
-    
+    return this.getAverage() >= 85;
 }
 
 }
