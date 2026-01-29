@@ -59,4 +59,18 @@ function countVowels(str){
 
 //Object Practice
 
+const student = {
 
+name: "Henry",
+age: 20,
+grades: [85, 90, 78],
+
+getAverage: function() {
+   
+},
+
+isHonorRoll: function() {
+    
+}
+
+}
